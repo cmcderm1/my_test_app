@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background: url(vinyl_image.jpg) no-repeat center center fixed;
+  background-image: image-url("vinyl_image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
