@@ -1,6 +1,7 @@
-.hero {
+.hero
+  background-image: url(<%= asset_path 'vinyl_image.jpg' %>) } ;
+  background-image: no-repeat;
   position: relative;
-  background-image: image-url("vinyl_image.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
