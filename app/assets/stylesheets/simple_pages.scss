@@ -1,5 +1,5 @@
 .hero {
-  background-image: url(asset-path('vinyl_image.jpg', image)); 
+  background-image: image-url('vinyl_image.jpg'); 
   background-image: no-repeat;
   position: relative;
   -webkit-background-size: cover;
