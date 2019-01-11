@@ -67,13 +67,8 @@
    display: block;
  }
 
- .row {
-     display: flex;
-     flex-wrap: wrap;
-     margin-right: 0px !important;
-     margin-left: 0px !important;
- }
- 
+
+
    } .site-footer, .page-wrap:after {
    /* .push must be the same height as footer */
      height: 8%;
