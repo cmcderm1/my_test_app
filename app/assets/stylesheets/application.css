@@ -67,10 +67,11 @@
    display: block;
  }
 
-.row {
-  margin-left: 0px;
-  margin-right: 0px;
-}
+ @mixin make-row() {
+   display: flex;
+   flex-wrap: wrap;
+ }
+ 
    } .site-footer, .page-wrap:after {
    /* .push must be the same height as footer */
      height: 8%;
