@@ -9,6 +9,6 @@ Rails.application.routes.draw do
   get 'welcome/index'
 
 
-  root 'simple_pages#index'
+  root 'simple_pages#landing_page'
 
 end

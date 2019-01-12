@@ -11,7 +11,6 @@ class ProductsController < ApplicationController
   # GET /products/1.json
   def show
   end
-
   # GET /products/new
   def new
     @product = Product.new
@@ -66,6 +65,8 @@ class ProductsController < ApplicationController
     def set_product
       @product = Product.find(params[:id])
     end
+
+
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def product_params
