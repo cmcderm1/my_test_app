@@ -8,9 +8,10 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
 
-
   root 'simple_pages#landing_page'
 
 end
 
-resources :orders, only: [:index, :show, :create, :destroy]
+Rails.application.routes.draw do
+  resources :orders, only: [:index, :show, :create, :destroy]
+end
