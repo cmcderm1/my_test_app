@@ -3,4 +3,32 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .img-fluid {
     max-width: 250px;
-  }
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1%;
+}
+.product-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  color: black;
+}
+
+
+.row .col-sm p{
+  text-align: center;
+}
+
+.row .col-sm h1{
+  text-align: center;
+}
+
+p#price-text{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-size: 12px;
+
+}
