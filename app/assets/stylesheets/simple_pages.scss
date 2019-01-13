@@ -89,3 +89,23 @@ h2 {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
+
+//**Landing_page**//
+
+ h2#product {
+  padding-top: 5%;
+  font-size: 3rem;
+  text-align: center;
+  color: black;
+}
+
+.carousel-caption {
+  color: black;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.carousel-item img{
+  align-items: center;
+  width: 400px !important;
+}
