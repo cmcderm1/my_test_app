@@ -23,12 +23,3 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
-
-production:
-  adapter: postgresql
-  encoding: unicode
-  host: localhost
-  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: vinyl-closet
-  username: candice.marie.mcdermott@gmail.com
-  password: <%= ENV['vinyl-closet_DATABASE_PASSWORD'] %>
