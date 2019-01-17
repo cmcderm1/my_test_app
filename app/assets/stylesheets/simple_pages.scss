@@ -1,10 +1,12 @@
-.hero {
+.parallax {
   background-image: image-url('vinyl_image.jpg');
-  background-image: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
   margin-left: 0px;
   margin-right: 0px;
-  background-size: cover;
   text-align: center;
   color: #fff;
   padding-top: 110px;
@@ -12,11 +14,11 @@
   letter-spacing: 2px;
   font-family: "Montserrat", sans-serif;
 }
-.hero h1 {
+.parallax h1 {
   font-size: 50px;
   line-height: 1.3;
 }
-.hero h1 span {
+.parallax h1 span {
   font-size: 25px;
   color: #e8f380;
   border-bottom: 2px solid #e8f380;
@@ -102,7 +104,9 @@ h2 {
 .carousel-caption {
   color: black;
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+
 }
 
 .carousel-item img{
