@@ -59,3 +59,5 @@ group :production do
 end
 
 gem 'devise'
+# A great Authorization gem by Ryan Bates 
+gem 'cancancan', '~> 1.10'

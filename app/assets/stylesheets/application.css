@@ -44,6 +44,19 @@
   }
 
 
+/*Alert Area & Notice Area*/
+
+div#notice-div {
+  margin-top: 7%;
+  font-family: 'Raleway', sans-serif;
+  color: #20B2AA;
+}
+
+div#alert-div {
+  margin-top: 7%;
+  font-family: 'Raleway', sans-serif;
+  color: #20B2AA;
+}
 
 
   body {

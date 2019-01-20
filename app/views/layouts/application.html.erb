@@ -67,10 +67,20 @@
   </head>
 
 <body>
-<%= yield %>
+  <div id="notice-div">
+  <% if notice %>
+    <p id="notice" class="alert alert-primary"><%= notice %></p>
+    </div>
+<% end %>
 
-<p class="notice"><%= notice %></p>
-       <p class="alert"><%= alert %></p>
+<div id="alert-div">
+<% if alert %>
+    <p id="alert" class="alert alert-primary"><%= alert %></p>
+<% end %>
+</div>
+
+
+<%= yield %>
 
 <footer class="site-footer">
   <p>Vinyl Closet &copy; 2019</p>
