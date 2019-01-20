@@ -18,6 +18,8 @@
   <%= csrf_meta_tags %>
   <link href='https://fonts.googleapis.com/css?family=Montserrat|Cardo' rel='stylesheet' type='text/css'>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300i" rel="stylesheet">
+
 
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" role="navigation" id="navbar-example">
@@ -42,11 +44,11 @@
         </li>
           </div>
 
-          <%= form_with(url: products_path, method: 'get', local: true) do |form| %>
-  <%= form.label :q, 'Search for:' %>
-  <%= form.text_field :q, id: 'q', value: params[:q] %>
-  <%= form.submit 'Search' %>
-<% end %>
+          <%= form_with(url: products_path, method: 'get', local: true, class: 'search-form') do |form| %>
+            <%= form.label :q, 'Looking for anything specific?', class: 'search-label' %>
+            <%= form.text_field :q, id: 'q', value: params[:q], class: 'search-field' %>
+            <%= form.submit 'Search', class: 'search-btn' %>
+        <% end %>
   </nav> <!-- end nav container -->
 
   </head>

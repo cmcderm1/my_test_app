@@ -14,11 +14,37 @@
  *= require_self
  */
 
+/* Search Form */
+
+.search-form {
+  color: white;
+}
+
+
+.search-label {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.search-field {
+  color: #20B2AA;
+  border-radius: 15px;
+}
+
+.search-btn {
+  background-color: #20B2AA;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
+}
 
 
   * {
     box-sizing: border-box;
   }
+
+
+
 
   body {
     color: #8f8f8f;
@@ -54,9 +80,26 @@
  font-family: "Montserrat", sans-serif;
  }
 
- .navbar-expand-lg a{
-   position: center;
+.navbar-expand-lg .navbar-collapse {
+   margin-right: 25%;
  }
+
+ .navbar-expand-lg .navbar-collapse li{
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 1rem;
+  }
+.navbar-expand-lg .navbar-collapse a{
+  color: white;
+}
+
+
+
+
+
+
+
+
 
   * {
       margin: 0;
@@ -95,3 +138,100 @@
 
 
 /*New Product Form*/
+.product-form {
+  margin-top: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #20B2AA;
+  width: 400px;
+  border-radius: 15px 50px 30px 5px;
+}
+
+
+
+
+
+
+.product-form .field{
+text-align: center;
+padding-bottom: 2%;
+padding-top: 2%;
+}
+
+.field .name-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.field .name {
+  color: black;
+  width: 250px;
+}
+
+.field .text-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.field .text {
+  width: 250px;
+  color: black;
+}
+
+.field .image-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.field .image {
+  width: 250px;
+  color: black;
+}
+
+.field .price-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  }
+
+  .field .price {
+    width: 250px;
+    color: black;
+  }
+
+.actions {
+  text-align: center;
+}
+
+.input {
+  width: 200px;
+  color: blue;
+}
+
+.new-product-btn {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  width: 130px;
+  border-radius: 15px 50px 15px 30px;
+  margin-top: 5%;
+}
+
+.new-product-btn a{
+  color: black;
+}
+
+.new-product-btn :hover{
+  background-color: black !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.new-product-btn a:hover{
+  color: white !important;
+}
