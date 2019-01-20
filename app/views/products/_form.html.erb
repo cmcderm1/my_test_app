@@ -1,3 +1,6 @@
+<h1 class= "new-product-title">Enter New Product:</h1>
+
+
 <%= form_with(model: product, local: true, class: 'product-form') do |form| %>
   <% if product.errors.any? %>
     <div id="error_explanation">

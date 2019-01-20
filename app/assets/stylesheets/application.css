@@ -115,7 +115,7 @@
   .page-wrap {
     min-height: 100%;
     /* equal to footer height */
-      margin-bottom: -142px;
+
   }
   .page-wrap:after {
     content: "";
@@ -125,19 +125,33 @@
     /* .push must be the same height as footer */
       height: 8%;
   }
-  .site-footer {
-    background: black;
+
+
+.site-footer {
+      background-color: black;
+      margin:0px;
   }
 
   .site-footer p{
     text-align: center !important;
     vertical-align: center;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
   }
 
 
 
 
 /*New Product Form*/
+
+.new-product-title {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10%;
+}
+
+
 .product-form {
   margin-top: 3%;
   padding-top: 4%;
@@ -146,11 +160,6 @@
   width: 400px;
   border-radius: 15px 50px 30px 5px;
 }
-
-
-
-
-
 
 .product-form .field{
 text-align: center;
