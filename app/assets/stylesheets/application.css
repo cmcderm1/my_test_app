@@ -77,11 +77,13 @@
 
 
  .navbar {
+ background-color: black;
  font-family: "Montserrat", sans-serif;
  }
 
 .navbar-expand-lg .navbar-collapse {
    margin-right: 25%;
+   color: black;
  }
 
  .navbar-expand-lg .navbar-collapse li{

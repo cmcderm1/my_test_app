@@ -12,7 +12,6 @@ end
 gem 'rails', '~> 5.2.2'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
-  gem 'byebug', platform: :mri
 	gem 'sqlite3', git: "https://github.com/larskanis/sqlite3-ruby", branch: "add-gemspec"
 end
 # Use Puma as the app server
@@ -58,3 +57,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 group :production do
     gem 'pg', '~> 0.20'
 end
+
+gem 'devise'

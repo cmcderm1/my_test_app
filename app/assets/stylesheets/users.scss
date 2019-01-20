@@ -1,0 +1,126 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+/*Log-in Page*/
+
+.login {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 1%;
+  color: #20B2AA;
+}
+
+.field {
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+
+.login-labels {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.login-fill {
+  font-family: 'Raleway', sans-serif;
+  font-size: .7rem;
+  width: 250px;
+}
+
+.login-btn {
+  margin-bottom: 5%;
+  background-color: #20B2AA;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+/*Register Page*/
+
+.register {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 1%;
+  color: #20B2AA;
+}
+
+.field {
+    margin-bottom: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+
+.register-labels {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.register-fill {
+  font-family: 'Raleway', sans-serif;
+  font-size: .7rem;
+  width: 250px;
+}
+
+.register-btn {
+  margin-bottom: 5%;
+  background-color: #20B2AA;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+/*Forgot Password*/
+
+.forgot-pass {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  padding-top: 15%;
+  padding-bottom: 1%;
+  color: #20B2AA;
+}
+
+.password-label {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+}
+
+.password-fill {
+  font-family: 'Raleway', sans-serif;
+  font-size: .7rem;
+  width: 250px;
+}
+
+.password-btn {
+  font-family: 'Raleway', sans-serif;
+  background-color: #20B2AA;
+  color: white;
+}
+
+.login-reg a{
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}

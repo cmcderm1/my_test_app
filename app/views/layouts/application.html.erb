@@ -42,6 +42,19 @@
         <li class="nav-item">
           <%= link_to 'Contact', simple_pages_contact_path %>
         </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+          <% if user_signed_in? %>
+        <li class="nav-item">
+            <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "nav-link") %>
+          </li>
+          <% else %>
+          <li class="nav-item">
+            <%= link_to('Login', new_user_session_path, class: "nav-link") %>
+          </li>
+          <% end %>
+          </li>
+    </ul>
           </div>
 
           <%= form_with(url: products_path, method: 'get', local: true, class: 'search-form') do |form| %>
@@ -55,6 +68,10 @@
 
 <body>
 <%= yield %>
+
+<p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
 <footer class="site-footer">
   <p>Vinyl Closet &copy; 2019</p>
 </footer>
