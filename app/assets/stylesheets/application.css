@@ -259,3 +259,17 @@ padding-top: 2%;
 .new-product-btn a:hover{
   color: white !important;
 }
+
+
+
+
+  /* Products/Show Page*/
+
+div#album-name {
+    margin-top: 15%;
+
+  }
+
+div#single-product.container {
+  text-align: center !important;
+}
