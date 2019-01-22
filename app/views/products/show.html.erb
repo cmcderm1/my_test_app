@@ -22,12 +22,26 @@
   </div>
 
   <div id="album-lowest-rating">
-      <%= @product.lowest_rating_comment.try(:rating) %>
+     <h4 class="product-indent">Best Review:</h4>
+    <p>  <%= @product.lowest_rating_comment.rating %></p>
+    <p>  <%= @product.lowest_rating_comment.body%></p>
+
   </div>
 
+
   <div id="album-highest-rating">
-      <%= @product.highest_rating_comment.try(:rating) %>
+      <h4 class="product-indent">Worst Review:</h4>
+    <p><%= @product.highest_rating_comment.rating %></p>
+      <p>"<%= @product.highest_rating_comment.body%>"</p>
   </div>
+
+
+
+  <%= render 'new_comment' %>
+  <%= render 'comments' %>
+
+
+
 </div>
 <%= link_to 'Edit', edit_product_path(@product) %>
 <%= link_to 'Back', products_path %>

@@ -10,6 +10,7 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+  config.assets.compile = true
 
    config.action_mailer.default_url_options = { host: 'vinyl-closet.herokuapp.com' }
 
