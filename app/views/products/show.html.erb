@@ -12,8 +12,7 @@
   </div>
 
   <div id ="album-image">
-    <h2 id= "single-product-title">Image url:</h2>
-      <%= @product.image_url %>
+    <%= image_tag @product.image_url, class: 'list_image' %>
   </div>
 
   <div id="album-price">
@@ -21,21 +20,7 @@
       <%= @product.price %>
   </div>
 
-  <div id="album-lowest-rating">
-     <h4 class="product-indent">Best Review:</h4>
-    <p>  <%= @product.lowest_rating_comment.rating %></p>
-    <p>  <%= @product.lowest_rating_comment.body%></p>
-
-  </div>
-
-
-  <div id="album-highest-rating">
-      <h4 class="product-indent">Worst Review:</h4>
-    <p><%= @product.highest_rating_comment.rating %></p>
-      <p>"<%= @product.highest_rating_comment.body%>"</p>
-  </div>
-
-
+  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
 
   <%= render 'new_comment' %>
   <%= render 'comments' %>
