@@ -55,9 +55,9 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
-    gem 'pg', '~> 0.20'
+  gem 'pg', '~> 1.1.3'
 end
 
 gem 'devise'
-# A great Authorization gem by Ryan Bates 
+# A great Authorization gem by Ryan Bates
 gem 'cancancan', '~> 1.10'
