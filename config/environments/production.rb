@@ -10,9 +10,12 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+  #config/environments/production.rb
   config.assets.compile = true
+  config.assets.digest = true
 
-   config.action_mailer.default_url_options = { host: 'vinyl-closet.herokuapp.com' }
+
+ config.action_mailer.default_url_options = { host: 'vinyl-closet.herokuapp.com' }
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
