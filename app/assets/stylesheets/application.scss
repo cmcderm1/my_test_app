@@ -1,0 +1,276 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+*
+ *= require jquery.raty
+ *= require_tree 
+ *= require_self
+ */
+
+/* Search Form */
+
+.search-form {
+  color: white;
+}
+
+
+.search-label {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+.search-field {
+  color: #20B2AA;
+  border-radius: 15px;
+}
+
+.search-btn {
+  background-color: #20B2AA;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+/*Alert Area & Notice Area*/
+
+div#notice-div {
+  margin-top: 7%;
+  font-family: 'Raleway', sans-serif;
+  color: #20B2AA;
+}
+
+div#alert-div {
+  margin-top: 7%;
+  font-family: 'Raleway', sans-serif;
+  color: #20B2AA;
+}
+
+
+  body {
+    color: #8f8f8f;
+    background: white;
+    font-family: "Cardo", serif;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.8;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    line-height: 2;
+  }
+
+  .content {
+    padding: 50px 2% 250px;
+  }
+
+
+ .navbar {
+ background-color: black;
+ font-family: "Montserrat", sans-serif;
+ }
+
+.navbar-expand-lg .navbar-collapse {
+   margin-right: 25%;
+   color: black;
+ }
+
+ .navbar-expand-lg .navbar-collapse li{
+    padding-right: 2%;
+    padding-left: 2%;
+    font-size: 1rem;
+  }
+.navbar-expand-lg .navbar-collapse a{
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+  * {
+      margin: 0;
+  }
+  html, body {
+      height: 100%;
+  }
+
+ body {
+   margin: 0 !important;
+ }
+
+  .page-wrap {
+    min-height: 100%;
+    /* equal to footer height */
+
+  }
+  .page-wrap:after {
+    content: "";
+    display: block;
+  }
+  .site-footer, .page-wrap:after {
+    /* .push must be the same height as footer */
+      height: 8%;
+  }
+
+
+.site-footer {
+      background-color: black;
+      margin:0px;
+  }
+
+  .site-footer p{
+    text-align: center !important;
+    vertical-align: center;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+  }
+
+
+
+
+/*New Product Form*/
+
+.new-product-title {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 10%;
+}
+
+
+.product-form {
+  margin-top: 3%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  background-color: #20B2AA;
+  width: 400px;
+  border-radius: 15px 50px 30px 5px;
+}
+
+.product-form .field{
+text-align: center;
+padding-bottom: 2%;
+padding-top: 2%;
+}
+
+.field .name-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.field .name {
+  color: black;
+  width: 250px;
+}
+
+.field .text-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.field .text {
+  width: 250px;
+  color: black;
+}
+
+.field .image-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+.field .image {
+  width: 250px;
+  color: black;
+}
+
+.field .price-label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  }
+
+  .field .price {
+    width: 250px;
+    color: black;
+  }
+
+.actions {
+  text-align: center;
+}
+
+.input {
+  width: 200px;
+  color: blue;
+}
+
+.new-product-btn {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+  width: 130px;
+  border-radius: 15px 50px 15px 30px;
+  margin-top: 5%;
+}
+
+.new-product-btn a{
+  color: black;
+}
+
+.new-product-btn :hover{
+  background-color: black !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.new-product-btn a:hover{
+  color: white !important;
+}
+
+
+
+
+  /* Products/Show Page*/
+
+div#album-name {
+    margin-top: 15%;
+
+  }
+
+div#single-product.container {
+  text-align: center !important;
+}
