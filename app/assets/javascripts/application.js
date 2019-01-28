@@ -15,7 +15,6 @@
 //= require jquery3
 //= require_tree
 //= require jquery.raty.js
-//= require jquery_ujs
 
 // Sticky Header
 $(window).scroll(function() {
