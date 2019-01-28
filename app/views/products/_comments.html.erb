@@ -7,5 +7,6 @@
         </div>
         <div class="rated" data-score="<%= comment.rating %>"></div>
         <%= will_paginate @comments %>
+        <%= link_to 'Destroy', comment, method: :delete, data: { confirm: 'Are you sure?' } %>
     <% end %>
 </div>
