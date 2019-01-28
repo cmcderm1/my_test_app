@@ -10,11 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
 //= require turbolinks
 //= require jquery3
 //= require_tree
 //= require jquery.raty.js
+//= require jquery_ujs
 
 // Sticky Header
 $(window).scroll(function() {
