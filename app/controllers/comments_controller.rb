@@ -7,7 +7,6 @@ class CommentsController < ApplicationController
     redirect_to product
   end
 
-
 def create
   @product = Product.find(params[:product_id])
   @comment = @product.comments.new(comment_params)
@@ -21,5 +20,6 @@ def create
       format.html { redirect_to @product, alert: 'Review was not saved successfully.' }
       format.json { render json: @comment.errors, status: :unprocessable_entity }
     end
-  end
+end
+end
 end
