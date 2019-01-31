@@ -69,3 +69,5 @@ gem 'cancancan', '~> 1.10'
 gem 'stripe'
 # security gem
 gem 'brakeman'
+# elevateZoom
+gem 'elevatezoom-rails'

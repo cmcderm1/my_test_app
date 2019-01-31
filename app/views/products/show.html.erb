@@ -11,8 +11,11 @@
       <%= @product.description %>
   </div>
 
-  <div id ="album-image">
-    <%= image_tag(@product.image_url, width: "350", class: "img-zoom," data_zoom_image:"@product.image_url") %>
+  <div class= "album-image">
+
+    <%= image_tag(@product.image_url, class: "img-zoom", width: "350px", data_zoom_image: "@product.image_url") %>
+
+
   </div>
 
   <div id="album-price">
@@ -20,7 +23,8 @@
       <%= @product.price %>
   </div>
 
-  <p>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </p>
+  <p>Average Rating:</p>
+    <div class="rated" data-score="<%= @product.average_rating %>"></div>
 
   <%= form_with(url: '/payments/create') do |form| %>
     <%= render partial: "shared/stripe_checkout_button" %>
