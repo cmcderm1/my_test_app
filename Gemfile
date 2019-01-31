@@ -65,3 +65,5 @@ end
 gem 'devise'
 # A great Authorization gem by Ryan Bates
 gem 'cancancan', '~> 1.10'
+#A GREAT gem for money transactions
+gem 'stripe'
