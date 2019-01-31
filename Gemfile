@@ -67,3 +67,5 @@ gem 'devise'
 gem 'cancancan', '~> 1.10'
 #A GREAT gem for money transactions
 gem 'stripe'
+# security gem
+gem 'brakeman'
