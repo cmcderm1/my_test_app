@@ -24,7 +24,10 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+# gem dalli is associated with caching
 gem 'dalli'
+
+gem 'redis-rails'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Use CoffeeScript for .coffee assets and views
