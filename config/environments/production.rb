@@ -92,4 +92,7 @@ config.assets.digest = true
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.web_socket_server_url = "wss://vinyl-closet.herokuapp.com/cable"
+  config.action_cable.allowed_request_origins = ['https://vinyl-closet.herokuapp.com', 'http://vinyl-closet.herokuapp.com']
+
 end

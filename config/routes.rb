@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   resources :products do
   resources :comments
   end
-  
+
+  mount ActionCable.server => '/cable'
+
   resources :orders, only: [:index, :show, :create, :destroy]
 
   get 'simple_pages/about'
