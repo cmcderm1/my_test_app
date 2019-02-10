@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <div class="container" id="single-product">
+  <div class="row" data-product-id="<%= @product.id %>">
   <div id="album-name">
     <h2 id="single-product-title">Album Name:</h2>
       <%= @product.name %>
@@ -35,7 +36,7 @@
   <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 
 
-
+</div>
 </div>
 <%= link_to 'Edit', edit_product_path(@product) %>
 <%= link_to 'Back', products_path %>
