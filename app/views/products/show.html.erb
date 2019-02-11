@@ -1,7 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<div class="container" id="single-product">
-  <div class="row" data-product-id="<%= @product.id %>">
+<div class="container" id="single-product" data-product-id="<%= @product.id %>">
   <div id="album-name">
     <h2 id="single-product-title">Album Name:</h2>
       <%= @product.name %>
@@ -27,16 +26,14 @@
   <p>Average Rating:</p>
     <div class="rated", id= "#average-rating", data-score="<%= @product.average_rating %>"></div>
 
+    <%= render 'new_comment' %>
+    <%= render 'comments' %>
+    <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
+
   <%= form_with(url: '/payments/create') do |form| %>
     <%= render partial: "shared/stripe_checkout_button" %>
   <% end %>
+  </div>
 
-  <%= render 'new_comment' %>
-  <%= render 'comments' %>
-  <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
-
-
-</div>
-</div>
-<%= link_to 'Edit', edit_product_path(@product) %>
-<%= link_to 'Back', products_path %>
+  <%= link_to 'Edit', edit_product_path(@product) %>
+  <%= link_to 'Back', products_path %>
