@@ -12,6 +12,7 @@
 //
 //= require jquery3
 //= require jquery.raty.js
+//= require rails-ujs
 //= require turbolinks
 //= require_tree
 //= require jquery.elevatezoom

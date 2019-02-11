@@ -2,8 +2,8 @@
 
 <h1 class="product-title">Explore Our Vinyl!</h1>
 
-<div class="container-fluid">
-  <div class="row">
+<div class="container-fluid" id="main-product-page">
+  <div class="row" id="main-products">
     <% cache(cache_key_for_products) do %>
     <%= render partial: "shared/product", collection: @products %>
     <% end %>

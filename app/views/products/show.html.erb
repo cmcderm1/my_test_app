@@ -18,21 +18,22 @@
 
   </div>
 
+  <p>Average Rating:</p>
+    <div class="rated", id= "#average-rating", data-score="<%= @product.average_rating %>"></div>
+
   <div id="album-price">
     <h2 id="single-product-title">Price:</h2>
       <%= @product.price %>
+      <%= form_with(url: '/payments/create') do |form| %>
+        <%= render partial: "shared/stripe_checkout_button" %>
+      <% end %>
   </div>
-
-  <p>Average Rating:</p>
-    <div class="rated", id= "#average-rating", data-score="<%= @product.average_rating %>"></div>
 
     <%= render 'new_comment' %>
     <%= render 'comments' %>
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
 
-  <%= form_with(url: '/payments/create') do |form| %>
-    <%= render partial: "shared/stripe_checkout_button" %>
-  <% end %>
+
   </div>
 
   <%= link_to 'Edit', edit_product_path(@product) %>
