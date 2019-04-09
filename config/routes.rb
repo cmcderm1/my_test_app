@@ -21,6 +21,8 @@ Rails.application.routes.draw do
 
   get 'simple_pages/landing_page'
 
+  get 'payments/create'
+
   root 'simple_pages#landing_page'
 
   post 'simple_pages/thank_you'
