@@ -25,7 +25,6 @@
     <h2 id="single-product-title">Price:</h2>
       <%= @product.price %>
       <%= form_with(url: '/payments/create') do |form| %>
-        <%= f.hidden_field(:product_id, :value => @product.id) %>
         <%= render partial: "shared/stripe_checkout_button" %>
       <% end %>
   </div>
