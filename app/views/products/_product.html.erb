@@ -1,5 +1,5 @@
-    <div class="col-sm">
-       <%= image_tag(product.image_url, class: "img-fluid"), product_path(product) %>
+    <div class="col-sm
+       <%= link_to image_tag(product.image_url, class: "img-fluid"), product %>
       <h1><%= link_to product.name, product %></h1>
       <% logger.debug "Product name is #{product.name}"%>
       <p><%= product.description %></p>
