@@ -4,7 +4,7 @@ Rails.application.routes.draw do
 
   resources :products do
   resources :comments
-  resources :payments
+  resources : do
   end
 
   mount ActionCable.server => '/cable'
