@@ -24,6 +24,7 @@
   <div id="album-price">
     <h2 id="single-product-title">Price:</h2>
         <%= @product.price %>
+         <%= form_with(url: '/payments/create') do |form| %>
         <%= render partial: "shared/stripe_checkout_button" %>
   </div>
 
