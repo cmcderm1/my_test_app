@@ -2,11 +2,7 @@ require 'rails_helper'
 
 describe User do
 
-  let(:user) {User.create!(first_name: "test_first", last_name: "test_last", email: "test@test.test", password: "Test456", username: "usernameTest")}
-
-  it "validates username length" do
-    expect(user.username.length).to be > 3
-  end
+  let(:user) {User.create!(first_name: "test_first", last_name: "test_last", email: "test@test.test", password: "Test456")}
 
   it "validates email length" do
     expect(user.email.length).to be > 3

@@ -3,8 +3,7 @@ require 'rails_helper'
 describe Product do
 
   let(:product) {
-    Product.create!(name: "vinyl record") 
-    Product.create!(name: "Product1", description: "This is the greatest hits of Johnny Blue", image_url: "/assets/images/vinyl_11.png", category_id: product_category.id )
+    Product.create!(name: "Product1", description: "This is the greatest hits of Johnny Blue", image_url: "/assets/images/vinyl_11.png")
   }
 
   let(:user) {User.create!(email: "test@test.com", password: "test456")}
