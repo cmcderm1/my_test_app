@@ -26,22 +26,15 @@
         <%= @product.price %>
   </div>
 
+
+
 <% if signed_in? %>
   <%= form_with(url: '/payments/create') do |form| %>
     <%= render partial: "shared/stripe_checkout_button" %>
   <% end %>
 <% end %>
 
-<h6>
-          Views:
-          <span class="badge badge-pill badge-warning">
-            <%= @product.views %>
-          </span>
-          Latest reviewer:&nbsp;&nbsp;
-          <span class="badge badge-pill badge-warning">
-            <%= @product.get_recent_reviewer %>
-          </span>
-</h6>
+
 
     <%= render 'new_comment' %>
     <%= render 'comments' %>
