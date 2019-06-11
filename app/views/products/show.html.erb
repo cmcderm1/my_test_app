@@ -32,6 +32,17 @@
   <% end %>
 <% end %>
 
+<h6>
+          Views:
+          <span class="badge badge-pill badge-warning">
+            <%= @product.views %>
+          </span>
+          Latest reviewer:&nbsp;&nbsp;
+          <span class="badge badge-pill badge-warning">
+            <%= @product.get_recent_reviewer %>
+          </span>
+</h6>
+
     <%= render 'new_comment' %>
     <%= render 'comments' %>
     <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
